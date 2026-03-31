@@ -1,0 +1,197 @@
+.lista-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-section h2 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.btn-purple {
+  background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 10px rgba(156, 39, 176, 0.4);
+}
+
+.btn-purple:disabled {
+  background: #ccc;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.btn-purple:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(156, 39, 176, 0.6);
+}
+
+.icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.table-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modern-table th, .modern-table td {
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+}
+
+.modern-table th {
+  background: #f8f9fa;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.modern-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.modern-table tbody tr:hover {
+  background-color: rgba(156, 39, 176, 0.05);
+}
+
+.modern-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.id-badge {
+  background: #e9ecef;
+  color: #6c757d;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.font-medium {
+  font-weight: 500;
+  color: #333;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 80px;
+}
+
+.role-badge.usuario {
+  background: #e1f5fe;
+  color: #0288d1;
+}
+
+.role-badge.admin {
+  background: #f3e5f5;
+  color: #8e24aa;
+}
+
+.role-badge.uma {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn.edit svg {
+  stroke: #1976d2;
+}
+
+.action-btn.edit:hover {
+  background: #e3f2fd;
+}
+
+.action-btn.delete svg {
+  stroke: #d32f2f;
+}
+
+.action-btn.delete:hover {
+  background: #ffebee;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem !important;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.form-wrapper {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
